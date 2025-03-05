@@ -51,7 +51,8 @@ export default {
 
 <template>
   <div>
-    <button
+    <!-- Commented out the join button -->
+    <!-- <button
       class="button join-call-button"
       color-scheme="secondary"
       :is-loading="isLoading"
@@ -64,7 +65,7 @@ export default {
     >
       <FluentIcon icon="video-add" class="mr-2" />
       {{ $t('INTEGRATIONS.DYTE.CLICK_HERE_TO_JOIN') }}
-    </button>
+    </button> -->
     <div v-if="dyteAuthToken" class="video-call--container">
       <iframe
         :src="meetingLink"
