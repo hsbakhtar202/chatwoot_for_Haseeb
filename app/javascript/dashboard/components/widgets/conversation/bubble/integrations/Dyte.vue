@@ -41,6 +41,7 @@ export default {
 
 <template>
   <div>
+    <!-- Join button commented out
     <woot-button
       size="small"
       variant="smooth"
@@ -52,6 +53,7 @@ export default {
     >
       {{ $t('INTEGRATION_SETTINGS.DYTE.CLICK_HERE_TO_JOIN') }}
     </woot-button>
+    -->
     <div v-if="dyteAuthToken" class="video-call--container">
       <iframe
         :src="meetingLink"
